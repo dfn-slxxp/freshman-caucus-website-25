@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link id="home_img" rel="shortcut icon" href="{% static 'mw_logo.png' %}">
+</head>
+
+<body style="background-color: #cddbe7;">
+
+    <header>
+        <nav>
+            <div class="nav_links">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/">Home</a>
+                <a href="/cabinet">Meet the Cabinet</a>
+                <a href="/events">Events</a>
+            </div>
+
+            <a href="/" id="name_container">
+                <img id="site_logo" src="{% static 'mw_logo.png' %}" alt="logo" id="logo" width="48px" height="48px">
+                <h1 id="site_name">FRESHman Caucus</h1>
+            </a>
+            
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <script>
+                function openNav() {
+                    document.getElementById("nav_links").style.width = "250px";
+                }
+
+                function closeNav() {
+                    document.getElementById("nav_links").style.width = "0";
+                }
+            </script>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Freshman Caucus. All rights reserved.</p>
+    </footer>
+</body>
+</html>
