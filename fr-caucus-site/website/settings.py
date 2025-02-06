@@ -29,6 +29,12 @@ DEBUG = True
 ALLOWED_HOSTS = [
     # Django Server
     '127.0.0.1',
+
+    # DO Droplet
+    '157.245.131.255',
+
+    # SU IT Host
+    'freshman.stuysu.org',
 ]
 
 
