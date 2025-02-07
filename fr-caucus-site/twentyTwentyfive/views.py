@@ -3,4 +3,4 @@ from django.http import HttpResponse
 from django.template import loader
 
 def home(request):
-    return render(request, 'twentyTwentyfive/base-header-footer.html')
+    return render(request, 'twentyTwentyFive/base-header-footer.html')
