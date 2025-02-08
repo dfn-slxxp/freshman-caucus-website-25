@@ -1,42 +1,40 @@
 <!DOCTYPE html>
-
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta keywords="Freshman Caucus, Freshman, Caucus, Student Government, Government, Freshman Caucus Website">
+    <meta keywords="Freshman Caucus, Freshman, Caucus, Student Government, Government, Freshman Caucus Website, Stuy, Stuyvesant, Stuyvesant High School, Stuyvesant High School Freshman Caucus">
     <meta viewport="width=device-width, initial-scale=1.0">
     <meta robots="index, follow">
     <meta name="description" content="The official website of the Freshman Caucus.">
     <meta name="keywords" content="Freshman Caucus, Freshman, Caucus, Student Government, Student, Government, Freshman Caucus Website">
     <meta name="author" content="Sebastian Waldman, Ryan Bergman, and Niam Kaufman - for Freshman Caucus">
     <title>{% block title %}Freshman Caucus{% endblock %}</title>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira&effect=fire">
     <link rel="stylesheet" href="{% static 'styles.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link id="home_img" rel="shortcut icon" href="{% static 'mw_logo.png' %}">
+
 </head>
 
 <body style="background-color: #cddbe7;">
-
-    <header style="background-color: #f0f0f0; padding: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; justify-content: space-between; align-items: center; text-align: center;">
-        <div class="logo-placeholder">
-            <img id="site_logo" src="https://ca.slack-edge.com/T0855CFUSQ3-U087XRV5LAU-f42837cca3d1-512" alt="logo" id="logo" width="48px" height="48px">
-        </div>
-        <h1>Freshman Caucus</h1>
+    <header>
+        <a href="/" id="name_container">
+            <div class="site-logo">
+                <img id="site_logo" src="{% static 'mw_logo.png' %}" alt="logo" id="logo" width="72px" height="72px">
+            </div>
+            <h1>FRESHman Caucus</h1>
+        </a>
         <div class="burger-menu">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-            <div id="nav_links" class="nav_links">
+            <span class="menu_button" style="font-size:30px;cursor:pointer;padding-right: 25px;" onclick="openNav()">&#9776;</span>
+            <div id="nav_links" class="nav_links">  
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="/">Home</a>
                 <a href="/cabinet">Meet the Cabinet</a>
                 <a href="/events">Events</a>
             </div>
-        </div>
-        <div style="display: flex; width: 100%;">
-            <div style="float: left; width: 24%; border-right: 1px solid black;"><a href="#">Link 1</a></div>
-            <div style="float: left; width: 24%; border-right: 1px solid black;"><a href="#">Link 2</a></div>
-            <div style="float: left; width: 24%; border-right: 1px solid black;"><a href="#">Link 3</a></div>
-            <div style="float: left; width: 24%;"><a href="#">Link 4</a></div>
         </div>
     </header>
     <script>
@@ -50,32 +48,12 @@
     </script>
 
     <main>
-        <div style="display: flex;">
-            <section class="welcome" style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; width: 33%;">
-                <h2>Welcome!</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </section>
-
-            <section class="latest-events" style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; width: 33%;">
-                <h2>Latest Events</h2>
-                <p>Some other department better write this lol.</p>
-            </section>
-
-            <section class="monthly-magazine" style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; width: 33%;">
-                <h2>Monthly Magazine</h2>
-                <p>Some other department better write this lol</p>
-            </section>
-        </div>
-        
+        {% block c %}
+        {% endblock %}
     </main>
 
-    <footer style="border-top: 3px solid navy; padding: 20px; text-align: center;">
-        <p>&copy; 2025 Freshman Caucus. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="https://instagram.com"><i class="fab fa-instagram fa-2x" style="border: 1px solid #000; padding: 5px;"></i></a>
-            <a href="https://facebook.com"><i class="fab fa-facebook fa-2x" style="border: 1px solid #000; padding: 5px;"></i></a>
-            <a href="https://x.com/"><i class="fab fa-x-twitter fa-2x" style="border: 1px solid #000; padding: 5px;"></i></a>
-        </div>
+    <footer>
+        <p>Copyright © 2025 Stuyvesant Freshman Caucus. All rights reserved. The source code for this website can be found on <a href="https://github.com/dfn-slxxp/freshman-caucus-website-25" target="_blank">Github</a>.</p>
     </footer>
 </body>
 </html>
