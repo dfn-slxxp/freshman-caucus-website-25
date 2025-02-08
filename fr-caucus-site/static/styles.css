@@ -1,4 +1,6 @@
-/* Header-Footer */
+#home_banner_img {
+    border-bottom: 7px solid #014576;
+}
 
 #home_img {
     width: 25px;
@@ -15,6 +17,10 @@
 
 #site_name {
     margin: 0px;
+}
+
+#menu_button {
+    color: #41596d;
 }
 
 .nav_links {
@@ -54,4 +60,25 @@
 @media screen and (max-height: 450px) {
     .nav_links {padding-top: 15px;}
     .nav_links a {font-size: 18px;}
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+}
+
+header {
+    background-color: #839cb0; 
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: center;
+}
+
+footer {
+    border-top: #445c6f 2px solid;
+    text-align: center;
+    align-items: center;
 }
