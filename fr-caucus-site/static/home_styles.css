@@ -1,0 +1,122 @@
+#home_banner_img {
+    border-bottom: 7px solid #014576;
+}
+
+#home_img {
+    width: 25px;
+    height: 25px;
+}
+
+#welcome {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+    color: #04558f;
+    font-weight: 600;
+    padding-top: 2%;
+    padding-bottom: 8px;
+}
+
+#subtitle {
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: 500;
+    color: #485f72;
+}
+
+#welcome_content_wrapper{
+    /* border-bottom: 7px solid #576d80; */
+}
+
+.doppio-one-regular {
+    font-family: "Doppio One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.sriracha {
+    font-family: "Sriracha", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wlc {
+    font-size: 150px;
+    font-family: 'Doppio One', sans-serif;
+}
+
+.separator{
+    border-bottom: 6px solid #576d80;
+    width: 80%;
+    border-radius: 2px;
+    margin: auto;
+}
+
+.cats{
+    text-align: center;
+    width: 82%;
+    margin: auto;
+    padding: 2%;
+}
+
+.category_wrapper{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 45%;
+    text-align: center;
+}
+
+.cat_title{
+    background-color: #445c6f;
+    margin:0;
+    color: #ffffff;
+    font-size: 2.4vmin;
+}
+
+.cat_banner_wrapper{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 48%;
+    border: 7px solid #445c6f;
+    min-height: 170px;
+    border-radius: 2%;
+}
+
+.cat_interior_separator{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width:1%;
+}
+
+.cat_text_wrapper{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 48%;
+    background: #dee7ef;
+    border-radius: 10px;
+    min-height: 170px;
+}
+
+.cat_separator{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 1%;
+}
+
+div span {
+    text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.28);
+}
+div span:not(:first-child) {
+    margin-left: -0.22em;
+}

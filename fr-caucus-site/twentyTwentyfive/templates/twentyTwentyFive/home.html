@@ -1,9 +1,66 @@
 {% extends "../twentyTwentyFive/base-header-footer.html" %} 
 {% load static %}
+{% block title %}Freshman Caucus{% endblock %}
+{% block heads %} <!-- head -->
+<link rel="stylesheet" href="{% static 'home_styles.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Doppio+One&display=swap" rel="stylesheet">
+{% endblock %}
 {% block c %} 
+
     <div id="home_banner">
         <img id="home_banner_img" src="{% static 'banner.png' %}" width="100%" height="auto" alt="banner">
     </div>
 
-    placeholder text
+    <div id="welcome_content_wrapper">
+        <div id="welcome">
+            <span class="wlc">W</span>
+            <span class="wlc">E</span>
+            <span class="wlc">L</span>
+            <span class="wlc">C</span>
+            <span class="wlc">O</span>
+            <span class="wlc">M</span>
+            <span class="wlc">E</span>
+            <span class="wlc">!</span>
+        </div>
+
+        <p id="subtitle" style="margin-bottom: 0;">We’re here and we’re ready to make our F.R.E.S.H.man year</p><p id="subtitle" style="margin-top: 0;">unforgettable 💪💪 and take things to the next level 🆙🚀.</p>
+    </div>
+    <div class="separator"></div>
+    <div class="cats">
+        <!---->
+        <div class="category_wrapper">
+
+            <div class="cat_banner_wrapper">
+                <p class="cat_title">LATEST EVENTS</p>
+                <img class="cat_banner" src="{% static 'events_banner.png' %}" width="20%" alt="events_banner">
+            </div>
+            <div class="cat_interior_separator"></div>
+            <div class="cat_text_wrapper">
+                <p class="cat_text">placeholder text</p>
+            </div>
+            
+        </div>
+        <!---->
+
+        <div class="cat_separator"></div>
+
+        <!---->
+        <div class="category_wrapper">
+
+            <div class="cat_banner_wrapper">
+                <p class="cat_title">MONTHLY MAGAZINE</p>
+                <img class="cat_banner" src="{% static 'magazine_banner.png' %}" width="20%" alt="magazine_banner">
+            </div>
+            <div class="cat_interior_separator"></div>
+            <div class="cat_text_wrapper">
+                <p class="cat_text">placeholder text</p>
+            </div>
+            
+        </div>
+        <!---->
+    </div>
+
+
 {% endblock %}
